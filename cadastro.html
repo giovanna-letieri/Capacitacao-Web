@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="saudacoesContainer">
+
+        <h1 class="saudacoes">Seja muito bem-vindo!</h1>
+
+        <p class="corpoSaudacoes">Que bom ter você aqui! Cadastre-se e prepare-se para embarcar em novas jornadas e descobrir lugares incríveis.</p>
+
+        <img src="assets/traveller.png" alt="ilustração de uma pessoa com uma mochila olhando um mapa" class="ilustracao">
+
+    </div>
+
+    <div class="loginContainer">
+
+        <h1 id="tituloCadastro">Cadastre-se</h1>
+
+        <form id="loginForm">
+            <label for="nome">Nome</label>
+            <input  type="text" id="name" name="name" class="textInput" placeholder="Insira seu nome completo" required>
+
+            <label for="email">Email</label>
+            <input  type="email" id="email" name="email" class="textInput" placeholder="Digite seu email" required>
+            
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" class="textInput" placeholder="Crie uma senha" required>
+
+            <input type="password" id="senha" name="senha" class="textInput" placeholder="Confirme sua senha" required>
+            
+            <div id="checkboxContainer">
+            <!--
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos" >Declaro que li e concordo com os <a href="" class="direcionamento">Termos de Uso</a> e a <a href="" class="direcionamento">Política de Privacidade</a>.</label>
+            -->
+            <label class="customCheckbox">
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+                <div id="declaracao">
+                Declaro que li e concordo com os <a href="" class="direcionamento">Termos de Uso</a> e a <a href="" class="direcionamento">Política de Privacidade</a>.
+                </div>
+            </label>
+
+            </div>
+
+            <button type="submit" class="btnLogin">Fazer cadastro</button>
+        </form>
+
+        <p class="registroMsg">Já tem uma conta? Faça seu Login <a href="./index.html" class="direcionamento">aqui!</a></p>
+    </div>
+</body>
+</html>
